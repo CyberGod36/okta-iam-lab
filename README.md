@@ -1,48 +1,54 @@
 okta-iam-lab/
 ├── README.md                          # This file
-├── docs/
-│   ├── JML-WORKFLOW.md               # User lifecycle detailed guide
-│   ├── RBAC-WORKFLOW.md              # Role-based access control guide
-│   ├── ACCESS-REQUESTS.md            # Approval workflow guide
-│   ├── MFA-SECURITY.md               # MFA & conditional access guide
-│   ├── SYSTEM-LOGS.md                # Log analysis & audit guide
-│   └── CERTIFICATION-PREP.md         # Okta certification alignment
-├── scenarios/
-│   ├── 01-newHire-onboarding.md
-│   ├── 02-lateralMove-transition.md
-│   ├── 03-offboarding-deprovisioning.md
-│   ├── 04-financeRBAC-SoD.md
+├── JML-WORKFLOW.md                    # User lifecycle (Join, Move, Leave)
+├── RBAC-WORKFLOW.md                   # Role-based access control design
+├── ACCESS-REQUESTS.md                 # Access request & approval workflows
+├── MFA-SECURITY.md                    # MFA & conditional access policies
+├── SYSTEM-LOGS.md                     # Log analysis & audit guide
+├── CERTIFICATION-PREP.md              # Okta certification alignment
+│
+├── /onboarding-scenarios              # Practical onboarding examples
+│   ├── 01-standard-hire.md
+│   ├── 02-contractor-onboarding.md
+│   └── 03-emergency-access.md
+│
+├── /access-control                    # RBAC & SoD configurations
+│   ├── 04-financialBAC-SoD.md
 │   ├── 05-dynamicGroupRules.md
-│   ├── 06-accessRequest-approval.md
+│   └── 06-accessRequest-approvals.md
+│
+├── /mfa-policies                      # MFA & security configurations
 │   ├── 07-multiLevelApproval.md
 │   ├── 08-mfaPolicy-config.md
-│   └── 09-locationBasedAccess.md
-├── screenshots/
-│   ├── jml/
-│   │   ├── 01-user-creation.png
-│   │   ├── 02-group-assignment.png
-│   │   ├── 03-app-provisioning.png
-│   │   └── 04-system-log-query.png
-│   ├── rbac/
-│   │   ├── 01-dynamic-group-rule.png
-│   │   ├── 02-sod-conflict-check.png
-│   │   └── 03-role-permissions-matrix.png
-│   ├── access-requests/
-│   │   ├── 01-access-request-policy.png
-│   │   ├── 02-approval-workflow.png
-│   │   └── 03-request-history.png
-│   ├── mfa/
-│   │   ├── 01-mfa-policy-config.png
-│   │   ├── 02-conditional-access-rule.png
-│   │   └── 03-location-zone-setup.png
-│   └── logs/
-│       ├── 01-system-log-interface.png
-│       ├── 02-user-creation-events.png
-│       ├── 03-provisioning-chain.png
-│       └── 04-audit-report.png
-├── logs/
-│   ├── audit-trail-sample.json        # Sample System Log exports
-│   ├── provisioning-events.log
-│   └── access-request-trail.log
-└── tools/
-    └── log-query-reference.md         # System Log query syntax & examples
+│   └── 09-conditional-access.md
+│
+├── /log-analysis                      # System logs & audit examples
+│   ├── 01-system-log-interface.png
+│   ├── 02-user-creation-events.png
+│   ├── 03-provisioning-chain.png
+│   ├── 04-dynamic-group-rule.png
+│   ├── 05-access-request-approval.png
+│   ├── 06-role-permission-matrix.png
+│   ├── 01-dynamic-group-rules.md
+│   ├── 02-sod-conflict-check.md
+│   ├── 03-role-permission-matrix.md
+│   ├── audit-trail-sample.json
+│   ├── access-request-trail.log
+│   ├── audit-trail-sample.json
+│   ├── process-request-trail.log
+│   └── log-query-reference.md
+│
+├── /setup-guide                       # Lab setup & configuration
+│   ├── /logs
+│   │   ├── 01-system-log-interface.png
+│   │   ├── 02-user-creation-events.png
+│   │   └── 03-provisioning-chain.png
+│   ├── /diagrams
+│   │   ├── 04-dynamic-group-rules.png
+│   │   ├── 05-access-request-approval.png
+│   │   └── 06-role-permission-matrix.png
+│   └── setup.org
+│
+└── LICENSE                            # MIT License
+
+
